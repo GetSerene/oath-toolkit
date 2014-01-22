@@ -53,6 +53,17 @@ apt-get install make git autoconf automake libtool bison libxmlsec1-dev
 apt-get install help2man gtk-doc-tools valgrind gengetopt
 -----
 
+.OS X dependencies ... tested on OS X 10.8.5 (12F45):
+-----
+# use the built-ins for make, bison, libtool, tar, gzip
+# install homebrew and use it to install the other dependencies
+brew install automake autoconf help2man gengetopt
+brew install git gtk-doc valgrind xml2 xmlsec1
+export CPPFLAGS="-I/usr/include/security"
+export XMLSEC_CFLAGS="-I/usr/local/include/xmlsec1 -DXMLSEC_CRYPTO_OPENSSL"
+export XMLSEC_LIBS="-lxmlsec1-openssl -lxmlsec1"
+-----
+
 If you have hints on how to install the required dependencies on other
 operating systems, please let us know.
 
