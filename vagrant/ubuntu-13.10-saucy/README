@@ -1,2 +1,4 @@
-vagrant box add saucy64 http://cloud-images.ubuntu.com/vagrant/saucy/current/saucy-server-cloudimg-amd64-vagrant-disk1.box
-vagrant up
+brandon@host# vagrant box add saucy64 http://cloud-images.ubuntu.com/vagrant/saucy/current/saucy-server-cloudimg-amd64-vagrant-disk1.box
+brandon@host# vagrant up
+brandon@host# vagrant ssh
+vagrant@guest# sudo apt-get install liboath0 liboath-dev libpam-oath oath-dbg oathtool
